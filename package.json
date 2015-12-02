@@ -1,25 +1,31 @@
 {
-  "name": "inuit-layout",
-  "version": "0.2.2",
-  "description": "A simple layout abstraction in the inuitcss framework",
+  "name": "aleut-layout",
+  "version": "0.3.0",
+  "description": "A simple layout abstraction in the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_objects.layout.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/inuitcss/objects.layout.git"
+    "url": "https://github.com/aleutcss/objects.layout.git"
   },
-  "author": "Harry Roberts <harry@csswizardry.com>",
-  "license": "Apache 2",
+  "contributors": [
+    {"name": "Marius Hauken", "url": "http://twitter.com/mhauken", "email": "hauken@netliferesearch.com"},
+    {"name": "Robin Sandborg", "url": "http://twitter.com/robrobro", "email": "robin@netliferesearch.com"},
+    {"name": "Knut Melvær", "url": "http://twitter.com/kmelve", "email": "knut@netliferesearch.com"},
+    {"name": "Harry Roberts", "email": "harry@csswizardry.com"}
+  ],
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/inuitcss/objects.layout/issues"
+    "url": "https://github.com/aleutcss/objects.layout/issues"
   },
-  "homepage": "https://github.com/inuitcss/objects.layout",
+  "homepage": "https://github.com/aleutcss/objects.layout",
   "keywords": [
-    "inuitcss",
+    "aleutcss",
+    "aleut",
     "oocss",
     "css"
   ],
   "dependencies": {
-    "inuit-defaults": "~0.2.1",
-    "inuit-functions": "~0.2.0"
+    "aleut-defaults": "~0.3.0",
+    "aleut-functions": "~0.3.0"
   }
 }

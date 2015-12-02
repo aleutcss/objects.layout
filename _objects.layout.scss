@@ -3,30 +3,30 @@
 \*------------------------------------*/
 
 /**
- * The inuitcss layout system uses `box-sizing: border-box;` and
+ * The aleutcss layout system uses `box-sizing: border-box;` and
  * `display: inline-block;` to create an extremely powerful, flexible
  * alternative to the traditional grid system. Combine the layout items with
  * the widths found in `trumps.widths`.
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-layout-gutter:           $spacing !default;
-$inuit-layout-gutter--tiny:       quarter($inuit-layout-gutter) !default;
-$inuit-layout-gutter--small:        halve($inuit-layout-gutter) !default;
-$inuit-layout-gutter--large:       double($inuit-layout-gutter) !default;
-$inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter) !default;
+$o-layout-gutter:           $spacing !default;
+$o-layout-gutter--tiny:       quarter($o-layout-gutter) !default;
+$o-layout-gutter--small:        halve($o-layout-gutter) !default;
+$o-layout-gutter--large:       double($o-layout-gutter) !default;
+$o-layout-gutter--huge:     quadruple($o-layout-gutter) !default;
 
-$inuit-enable-layout--tiny:     false !default;
-$inuit-enable-layout--small:    false !default;
-$inuit-enable-layout--large:    false !default;
-$inuit-enable-layout--huge:     false !default;
-$inuit-enable-layout--flush:    false !default;
-$inuit-enable-layout--rev:      false !default;
-$inuit-enable-layout--middle:   false !default;
-$inuit-enable-layout--bottom:   false !default;
-$inuit-enable-layout--right:    false !default;
-$inuit-enable-layout--center:   false !default;
-$inuit-enable-layout--auto:     false !default;
+$o-enable-layout--tiny:     false !default;
+$o-enable-layout--small:    false !default;
+$o-enable-layout--large:    false !default;
+$o-enable-layout--huge:     false !default;
+$o-enable-layout--flush:    false !default;
+$o-enable-layout--rev:      false !default;
+$o-enable-layout--middle:   false !default;
+$o-enable-layout--bottom:   false !default;
+$o-enable-layout--right:    false !default;
+$o-enable-layout--center:   false !default;
+$o-enable-layout--auto:     false !default;
 
 
 
@@ -35,7 +35,7 @@ $inuit-enable-layout--auto:     false !default;
 // Here we set a variable assuming that `box-sizing: border-box;` is not set
 // globally. If it has been previously been defined, the following variable will
 // be overriden and will be set to `true`.
-$inuit-global-border-box: false !default;
+$global-border-box: false !default;
 
 
 
@@ -48,7 +48,7 @@ $inuit-global-border-box: false !default;
     list-style: none;
     margin:  0;
     padding: 0;
-    margin-left: -$inuit-layout-gutter;
+    margin-left: -$o-layout-gutter;
 }
 
     /**
@@ -60,11 +60,11 @@ $inuit-global-border-box: false !default;
      */
     .o-layout__item {
         display: inline-block; /* [1] */
-        padding-left: $inuit-layout-gutter; /* [2] */
+        padding-left: $o-layout-gutter; /* [2] */
         vertical-align: top; /* [3] */
         width: 100%; /* [4] */
 
-        @if $inuit-global-border-box == false {
+        @if $o-global-border-box == false {
             -webkit-box-sizing: border-box; /* [5] */
                -moz-box-sizing: border-box; /* [5] */
                     box-sizing: border-box; /* [5] */
@@ -76,68 +76,68 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-layout--tiny == true) {
+@if ($o-enable-layout--tiny == true) {
 
     /**
      * Layouts with tiny gutters.
      */
 
     .o-layout--tiny {
-        margin-left: -($inuit-layout-gutter--tiny);
+        margin-left: -($o-layout-gutter--tiny);
 
         > .o-layout__item {
-            padding-left: $inuit-layout-gutter--tiny;
+            padding-left: $o-layout-gutter--tiny;
         }
 
     }
 
 }
 
-@if ($inuit-enable-layout--small == true) {
+@if ($o-enable-layout--small == true) {
 
     /**
      * Layouts with small gutters.
      */
 
     .o-layout--small {
-        margin-left: -($inuit-layout-gutter--small);
+        margin-left: -($o-layout-gutter--small);
 
         > .o-layout__item {
-            padding-left: $inuit-layout-gutter--small;
+            padding-left: $o-layout-gutter--small;
         }
 
     }
 
 }
 
-@if ($inuit-enable-layout--large == true) {
+@if ($o-enable-layout--large == true) {
 
     /**
      * Layouts with large gutters.
      */
 
     .o-layout--large {
-        margin-left: -($inuit-layout-gutter--large);
+        margin-left: -($o-layout-gutter--large);
 
         > .o-layout__item {
-            padding-left: $inuit-layout-gutter--large;
+            padding-left: $o-layout-gutter--large;
         }
 
     }
 
 }
 
-@if ($inuit-enable-layout--huge == true) {
+@if ($o-enable-layout--huge == true) {
 
     /**
      * Layouts with huge gutters.
      */
 
     .o-layout--huge {
-        margin-left: -($inuit-layout-gutter--huge);
+        margin-left: -($o-layout-gutter--huge);
 
         > .o-layout__item {
-            padding-left: $inuit-layout-gutter--huge;
+            padding-left: $o-layout-gutter--huge;
         }
 
     }
@@ -148,7 +148,7 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-layout--flush == true) {
+@if ($o-enable-layout--flush == true) {
 
     /**
      * Layouts with no gutters.
@@ -169,7 +169,7 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-layout--rev == true) {
+@if ($o-enable-layout--rev == true) {
 
     /**
      * Reversed rendered order of layout items, e.g. items 1, 2, 3, 4 in your
@@ -193,7 +193,7 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-layout--middle == true) {
+@if ($o-enable-layout--middle == true) {
 
     /**
      * Align layout items to the vertical centers of each other.
@@ -209,7 +209,7 @@ $inuit-global-border-box: false !default;
 
 }
 
-@if ($inuit-enable-layout--bottom == true) {
+@if ($o-enable-layout--bottom == true) {
 
     /**
      * Align layout items to the vertical bottoms of each other.
@@ -229,7 +229,7 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-layout--right == true) {
+@if ($o-enable-layout--right == true) {
 
     /**
      * Make the layout items fill up from the right hand side.
@@ -246,7 +246,7 @@ $inuit-global-border-box: false !default;
 
 }
 
-@if ($inuit-enable-layout--center == true) {
+@if ($o-enable-layout--center == true) {
 
     /**
      * Make the layout items fill up from the center outward.
@@ -267,7 +267,7 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-layout--auto == true) {
+@if ($o-enable-layout--auto == true) {
 
     /**
      * Cause layout items to take up a non-explicit amount of width.
