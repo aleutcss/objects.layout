@@ -7,7 +7,7 @@ the traditional grid system. It is based on
 Let's get this over with: It is based on inline-blocks. That means three things:
 1. We don't have to use floats and clearfixes. Yay!
 2. We can easily flip the layout, center it by just adding one class.
-3. Since we use inline-block we unfortunately can't have spaces between the columns. Two columns at 50% = 100%. If we then add a space we're on more than 100% which doesn't add up. This means that we need to remove the spaces between the columns either with placing the columns close like this: `</div><div class="o-layout__item">`, by commenting between the closing and new opening tag (like in our example under), or by wrapping around a `{% spaceless %}` tag (in the [TWIG](http://twig.sensiolabs.org/)) or similar that removes whitespace.
+3. Since we use inline-block we unfortunately can't have spaces between the columns. Two columns at 50% = 100%. If we then add a space we're on more than 100% which doesn't add up. This means that we need to remove the spaces between the columns either with placing the columns close like this: `</div><div class="o-layout__item">`, by commenting between the closing and new opening tag (like in our example under), or by wrapping around a `spaceless` tag (in the [TWIG](http://twig.sensiolabs.org/)) or similar that removes whitespace.
 
 This layout-system is combined with the width-classes found in [utilities.widths](https://github.com/aleutcss/utilities.widths) and [utilities.widths-responsive](https://github.com/aleutcss/utilities.widths-responsive)
 
