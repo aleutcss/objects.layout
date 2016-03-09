@@ -33,6 +33,8 @@ Basic usage of the Block object uses the required classes:
 </div>
 ```
 
+![Example of o-layout](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-layout.png)
+
 The only valid child of the `.o-layout` node is `.o-layout__item`.
 
 ## Options
@@ -60,6 +62,7 @@ For example:
     </div>
 </div>
 ```
+![Example of o-layout options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-layout-options.png)
 
 ### Enable options
 To enable the optional classes set the variables to `true` before you import
