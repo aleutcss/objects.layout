@@ -15,7 +15,8 @@ This layout-system is combined with the width-classes found in [utilities.widths
 ## Install using npm:
 
 ```shell
-    $ npm install --save-dev @aleut/objects.layout
+    $ npm install --save-dev aleut.objects.layout
+
 ```
 
 ## Usage
